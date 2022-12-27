@@ -35,7 +35,8 @@ body {
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -51,6 +52,12 @@ body {
   font-size: 4.4rem;
   line-height: 1.2;
   margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3.4rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
 
 .subheading {
@@ -110,7 +117,9 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 6.4rem;
+  column-gap: 9.6rem;
+  align-items: center;
 }
 
 .grid--2-cols {
@@ -242,9 +251,48 @@ body {
   padding: 9.6rem 0;
 }
 
-.subheading {
+.step-description {
+  font-size: 2rem;
+  line-height: 1.8;
 }
 
 .step-img {
-  width: 50%;
+  width: 35%;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-img-box::after,
+.step-img-box::before {
+  position: absolute;
+  display: block;
+  content: "";
+}
+
+.step-img-box::before {
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  z-index: -2;
+}
+
+.step-img-box::after {
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #f1e0d2;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.step-number {
+  font-size: 9.8rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
 }
