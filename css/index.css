@@ -308,7 +308,7 @@ strong {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -649,7 +649,6 @@ strong {
 
 .princing-plan {
   border-radius: 11px;
-
   width: 75%;
 }
 
