@@ -1,9 +1,23 @@
 ///////////////////////////////////////////////////////////
-// Fixing flexbox gap property missing in some Safari versions
+
 const yearEl = document.querySelector(".footer-year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
 
+const burgerMenu = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+burgerMenu.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+//
+//
+
+//
+
+//
+// Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
   var flex = document.createElement("div");
   flex.style.display = "flex";
